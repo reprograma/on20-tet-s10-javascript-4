@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    text-decoration: none;
+}
+
+.tituloPrincipal{
+    font-size: 3em;
+    text-align: center;
+}
+
+.gradient{
+    background-image: linear-gradient(to top, rgb(58, 39, 77), rgb(42, 74, 100), rgb(183, 236, 231)); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main{
+    background-color: rgb(42, 74, 100);
+    margin: 12px 0px 0px 0px;
+    padding: 10px;
+}
+
+footer{
+    background-color: rgb(42, 74, 100);
+    color: #fafafa;
+    font-size: 1em;
+    padding: 12px;
+    text-align: center;
+}
