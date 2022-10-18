@@ -1,77 +1,75 @@
-body{
+body {
     background-color: black;
-  
-  }
-  
-  
-  
 
-  header {
+}
+
+
+
+
+header {
     width: 100%;
-    
     height: 40vh;
-    background-image: url(./6bb4f8da0eb4cb5497e97bf1c86826e8.gif);
-    background-size: cover;
-    -webkit-mask-image: linear-gradient(
-      to bottom,
-      rgba(65, 62, 62, 0.7),
-      rgba(43, 43, 43, 0)
-    );
-  }
-  
-  img{
-   
-    
+     background-image: url(./6bb4f8da0eb4cb5497e97bf1c86826e8.gif);
+         background-size: cover;
+            -webkit-mask-image: linear-gradient(to bottom,
+            rgba(65, 62, 62, 0.7),
+            rgba(43, 43, 43, 0));
+}
+
+
+img {
+
+
     cursor: pointer;
     transition: all 0.5s;
     cursor: pointer;
     border-radius: 1em;
     justify-content: center;
-    
+
     margin: 2em;
     height: 10em;
-    
-    
-  }
-  
-  img:hover {
+
+
+}
+
+img:hover {
     transform: scale(1.010);
     box-shadow: 2px 2px 4px #828e9c;
     margin-bottom: 5em;
-    
-  }
- 
-  
-  main{
-    
+
+}
+
+
+main {
+
     margin-left: 1.5em;
-    
+
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
-  
-  }
 
-  div{
+}
+
+div {
     margin-bottom: 2em;
     margin-left: 4.5em;
     border-radius: 0.8em;
     align-items: center;
     display: flex;
     flex-direction: column;
-    
+
     background-color: rgba(19, 19, 19, 0.7);
     justify-content: space-between;
-    
-    
-  
+
+
+
     width: 180px;
-    
-    
-    
-  }
-  
-  p{
+
+
+
+}
+
+p {
     margin-bottom: 1em;
     align-items: center;
     text-align: center;
@@ -79,17 +77,13 @@ body{
     margin-right: 1em;
     margin-left: 1em;
     display: flex;
-  }
-  h2{
+}
+
+h2 {
     align-items: center;
     font-size: 12px;
     font-weight: 200;
     text-shadow: 0.1em 0.1em 0.2em rgb(71, 123, 113);
     color: whitesmoke;
     text-align: center;
-  }
-  
- 
-  
-
- 
+}

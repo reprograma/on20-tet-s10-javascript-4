@@ -1,5 +1,3 @@
-// https://dog.ceo/dog-api/breeds-list
-
 const container = document.getElementById('demo')
 
 async function getDoguinho(raca) {
