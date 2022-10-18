@@ -4,6 +4,7 @@
 }
 
 .tituloPrincipal{
+    color: black;
     font-size: 3em;
     text-align: center;
 }
@@ -15,10 +16,19 @@
     -webkit-text-fill-color: transparent;
 }
 
-main{
+.container-principal{
     background-color: rgb(42, 74, 100);
+    display: flex;
+    justify-content: center;
     margin: 12px 0px 0px 0px;
     padding: 10px;
+}
+
+.card{
+    background-color: rgb(225, 242, 240);
+    border: 4px double black;
+    padding: 5px;
+    margin: 5px;
 }
 
 footer{
