@@ -5,6 +5,7 @@ function criarCards(endereco){
             <p>${endereco.logradouro}</p>
             <p>${endereco.bairro}</p>
             <p>${endereco.localidade}</p>
+            <p>${endereco.uf}</p>
             <p>${endereco.ddd}</p>
         </div>
     `
