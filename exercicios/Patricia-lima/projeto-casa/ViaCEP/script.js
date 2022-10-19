@@ -1,8 +1,11 @@
 
     const main= document.getElementById("pesquisar-cep")
 
-async function encontrarEndereco(){
+    async function encontrarEndereco(){
     try{
+        const resposta = await fetch (`https://viacep.com.br/ws/${cep}/json/`)
+        const cep = await resposta.json()
+        
         const form = document.createElement ("form")
         main.appendChild(form);
 
@@ -14,10 +17,3 @@ async function encontrarEndereco(){
     }
 }
 
-{/* <div id="pesquisar-cep">
-<form action="text">
-    <input type="number">
-</form>
-
-
-</div> */}
