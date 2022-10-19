@@ -70,3 +70,49 @@ footer{
     padding: 12px;
     text-align: center;
 }
+
+@media(max-width:480px){
+    .card-informacoes{
+        display: block;
+        text-align: center;
+    }
+
+    .poster{
+        padding: 10px;
+        width: 15em;
+        border-radius: 20px;
+    }
+
+    .resume{
+        font-size: 15px;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    footer{
+        font-size: 1.3em;
+    }
+}
+
+@media(min-width:480px) and (max-width:780px){
+    .card-informacoes{
+        display: flex;
+        text-align: center;
+    }
+
+    .poster{
+        padding: 10px;
+        width: 15em;
+        border-radius: 20px;
+    }
+
+    .resume{
+        font-size: 18px;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    footer{
+        font-size: 1.3em;
+    }
+}
