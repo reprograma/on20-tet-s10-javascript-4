@@ -4,22 +4,23 @@ async function getFilmes() {
   try {
     const resposta = await fetch('https://ghibliapi.herokuapp.com/films')
     const dados = await resposta.json()
-    const id = document.createElement ("id")
-    id.textContent = 'id';
-    container.appendChild (id)
-    console.log(dados[0].id)
-    const titulo = document.createElement("title")
-    titulo.textContent = 'texto';
-    container.appendChild(titulo)
-    console.log(dados[0].title)
-    const tituloOriginal = document.createElement("original_title")
-    tituloOriginal. textContent = 'texto';
-    container.appendChild(tituloOriginal)
-    console.log(dados[0].original_title)
+
+    dados.forEach((filme) => {
+        container.innerHTML += 
+        `<div class="cards">
+            <h1 class="titulo">${filme.title}</h1>
+            <h2 class="titulo-original">${filme.original_title}</h2>
+            <h2 class="titulo-original">${filme.original_title_romanised}</h2>
+            <img class="imagem" src=${filme.image}>
+            <img class="banner" src=${filme.movie_banner}>
+            
+            <p class="id">${filme.id}</p>
+        </div>
+        `
+      })
 }
   catch(err) {
     console.error('Capturei um erro:', err)
   }
 }
-
 getFilmes()
