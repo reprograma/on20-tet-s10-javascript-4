@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .tituloPrincipal{
@@ -16,19 +17,50 @@
     -webkit-text-fill-color: transparent;
 }
 
+
 .container-principal{
     background-color: rgb(42, 74, 100);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
     margin: 12px 0px 0px 0px;
     padding: 10px;
 }
 
 .card{
     background-color: rgb(225, 242, 240);
-    border: 4px double black;
+    border: 6px double black;
     padding: 5px;
     margin: 5px;
+    width: 40em;
+    text-align: start;
+}
+
+.titulo-secundario{
+    text-align: center;
+    font-size: 2em;
+    margin: 8px;
+}
+
+.card-informacoes{
+    display: flex;
+}
+
+.poster{
+    padding: 15px;
+    width: 15em;
+    border-radius: 20px;
+}
+
+.resume{
+    font-size: 19px;
+    padding: 15px;
+    text-align: justify;
+}
+
+spam{
+    font-weight: bolder;
+    font-size: 20px;
 }
 
 footer{
