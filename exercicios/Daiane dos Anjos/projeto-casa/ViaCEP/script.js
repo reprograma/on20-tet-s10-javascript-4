@@ -21,8 +21,7 @@ function mostrarEndereco (dados){
 		resultado.innerHTML = "Endereço não encontrado, verifique o CEP e tente novamente"
 	} else {
 	resultado.innerHTML = `<p>Endereço: ${dados.logradouro}</p>
-	                       <p>Complemento: ${dados.complemento}</p> 
-                           <p>Bairro: ${dados.bairro}</p>
+	                       <p>Bairro: ${dados.bairro}</p>
 						   <P>Cidade: ${dados.localidade}</P>
 						   <P>Estado: ${dados.uf}</P>`
 
