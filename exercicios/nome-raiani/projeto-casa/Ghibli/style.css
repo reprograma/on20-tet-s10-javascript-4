@@ -1,19 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,300;1,400&family=Quicksand&display=swap');
+
+
 body{
+    background-color: rgb(190, 135, 241);
+    font-family: 'Prompt', sans-serif;
     padding: 0;
     margin: 0;
+}
+
+h1{
+    text-align: center;
+    margin: 50px;
 }
 
 main{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .card{
-    background-color: rgb(98, 243, 243);
+    background-color: white;
     display: flex;
     width: 500px;
-   
-    margin: 20px;
 }
 
 .card img{
@@ -24,3 +34,12 @@ main{
 .descricao-card{
     padding: 16px;
 }
+
+/* limitar tamanho do texto. */
+.descricao-card p {
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 4;
+   -webkit-box-orient: vertical;
+  }

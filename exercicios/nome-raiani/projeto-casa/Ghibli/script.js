@@ -7,6 +7,7 @@ function criarCards(filme){
         <div class="descricao-card">
         <h2>${filme.title}</h2>
         <p>${filme.description}</p>
+        <p> <strong>Diretor:</strong> <br/> ${filme.director}</p>
         </div>
     `
 }
