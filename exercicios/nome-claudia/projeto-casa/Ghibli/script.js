@@ -1,13 +1,12 @@
 //https://ghibliapi.herokuapp.com/films
 //https://ghibliapi.herokuapp.com/
 
+const containerPrincipal = document.getElementById('container-principal');
+
 fetch("https://ghibliapi.herokuapp.com/films")
   .then((response) => response.json())
   .then((animacoes) => preencherCard(animacoes))
   .catch((error) => console.log('Erro ao pegar dados. ' + error));
-
-
-const containerPrincipal = document.getElementById('container-principal');
 
 function criarCard(animacao) {
   return `
