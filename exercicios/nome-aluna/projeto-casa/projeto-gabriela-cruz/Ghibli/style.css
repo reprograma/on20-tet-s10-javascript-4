@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: #353b48;
+  }
+  
+  body {
+    margin-top: 20px ;
+    margin-left: 20px;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+  center {
+    font-size: 5em;
+    margin: 35px 25px;
+    color:#7f8fa6;
+    
+  }
+  
+  #ghibli {
+    display: grid;
+    grid-template-columns: repeat(6, 3fr);
+    gap: 20px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 650px;
+  }
+  
+  .container img {
+    width: 100%;
+    align-self: center;
+    box-shadow: 1px 1px 10px #7f8fa6;
+    border-radius: 5%;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-top: 15px;
+    color:#353b48;
+  }
+  
+  .director {
+    margin-top: 15px;
+    align-self: flex-start;
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+  
+    
+  
+  .description {
+    margin-top: 10px;
+  }
