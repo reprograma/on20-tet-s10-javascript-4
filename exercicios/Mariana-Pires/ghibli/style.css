@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:content-box;
+    font-size: 12px;
+    color: #caf1d4;
+    font-family: 'Noto Sans Mono';
+  }
+  
+  body {
+    height: 100vh;
+    margin-left: 10%;
+    margin-top: 5%;
+    background-image: url(./img/bg.jpg);
+    background-size: 200vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  #main-content {
+    display:grid;
+    grid-template-columns: repeat(2, 9fr);
+    gap: 10rem;
+    max-width: 90rem;
+    padding-bottom: 5%;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 55vh;
+    background-color: rgb(104, 154, 57);
+    border-radius: 25px;
+  }
+  
+  .card img {
+    margin-top: 10px;
+    width: 25rem;
+    align-self: center;
+    border-radius: 20px;
+  }
+
+  .date {
+    align-self: center;
+  }
+
+  .description{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    }
+  
+  .director{
+    align-self: center;
+  }
+
+
+  .title {
+    font-size: 2rem;
+    font-family: 'Fuzzy Bubbles', Arial, Helvetica, sans-serif;
+    text-shadow: #7f8fa6;
+    align-self:  center;
+    
+  }
+  
+  .type {
+    align-self: center;
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+  
+  .type::before {
+    content: '💠';  
+    font-style: normal;
+  }
+  

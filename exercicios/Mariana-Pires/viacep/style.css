@@ -1,0 +1,17 @@
+*{
+    font-size: 2px;
+    background-color: black;
+
+}
+
+h1{
+    font-size: 5000%;
+    font-weight: 900px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    color: white;
+
+}
