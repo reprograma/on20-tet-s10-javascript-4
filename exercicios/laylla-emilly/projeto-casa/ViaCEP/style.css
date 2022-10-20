@@ -1,0 +1,21 @@
+#demo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+body {
+    margin:0;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(19, 68, 60);
+    color: aliceblue;
+}
+.titulo {
+    text-align: center;
+}
+.descricao {
+    text-align: center;
+}
+.endereco {
+    margin-top: 20px;
+}
