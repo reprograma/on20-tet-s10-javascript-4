@@ -1,8 +1,14 @@
 const container = document.getElementById('demo')
 
-async function getDoguinho(raca) {
+// const inputCEP = document.getElementById('input-CEP').value
+
+const form = document.getElementById('form')
+
+form.addEventListener('submit', getCEP)
+
+async function getCEP(infoCEP) {
   try {
-    const resposta = await fetch(`https://dog.ceo/api/breed/${raca}/images/random`)
+    const resposta = await fetch(`https://viacep.com.br/ws/${infoCEP}/json/`)
     console.log(resposta)
     const dados = await resposta.json()
     console.log(dados)
