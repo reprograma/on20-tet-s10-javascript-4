@@ -1,35 +1,17 @@
-const container = document.getElementById('demo')
+const conteiner = document.getElementById('demo')
 
-async function getDoguinho(raca) {
+async function getDog(raca) {
   try {
-    const resposta = await fetch(`https://dog.ceo/api/breed/${raca}/images/random`)
-    console.log(resposta)
-    const dados = await resposta.json()
-    console.log(dados)
+    const response = await fetch(`https://dog.ceo/api/breed/${raca}/images/random`)
+    const json = await response.json()
     const imagem = document.createElement('img')
-    imagem.setAttribute('src', dados.message)
-    container.appendChild(imagem)
+    imagem.setAttribute('src', json.message)
+    conteiner.appendChild(imagem)
   }
-  catch(err) {
-    console.error('Capturei um erro:', err)
+
+  catch(erro){
+    console.log('Capturei um erro' + erro)
   }
 }
 
-getDoguinho('doberman')
-
-// async function doguinhoAleatorio() {
-//   try {
-//     const resposta = await fetch('https://dog.ceo/api/breeds/image/random')
-//     console.log(resposta)
-//     const dados = await resposta.json()
-//     console.log(dados)
-//     const imagem = document.createElement('img')
-//     imagem.setAttribute('src', dados.message)
-//     container.appendChild(imagem)
-//   }
-//   catch(err) {
-//     console.error('Capturei um erro:', err)
-//   }
-// }   
-
-// doguinhoAleatorio()
+getDog('chow')
