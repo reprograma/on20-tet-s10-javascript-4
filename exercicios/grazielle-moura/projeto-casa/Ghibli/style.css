@@ -1,0 +1,17 @@
+
+  body {
+    background-image: url(./cinema.jpg);
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+#demo img {
+    width: 100px;
+}
+
+#demo {
+    height: 100%;
+}
+ 
