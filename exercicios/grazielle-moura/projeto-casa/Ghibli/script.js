@@ -1,21 +1,26 @@
-const container = document.getElementById('demo')
-
-async function getFilmes(filmes) {
-try {
-
-    const response = await fetch("https://ghibliapi.herokuapp.com/films")
-    const filmes = await response.json()
-    filmes.forEach(element => {
-        const filme = document.createElement('img')
-        filme.setAttribute('src', element.image)
-        container.appendChild(filme);
-    });
-
-
-}
-catch(err) {
-   console.log('Capturei um erro:', err)
-}}
-
-getFilmes()
-
+const createSection = (film) => {
+    return `
+      <div class="film">
+        <img src=${film.image} class="image">
+        <h2 class="title">${film.title}</h2>
+      </div>
+    `
+  }
+  
+  const container = document.getElementById('demo')
+  
+  const getFilms = async () => {
+    try{
+      const response = await fetch('https://ghibliapi.herokuapp.com/films')
+      const films = await response.json()
+      const ourFilms = films.slice(0,20)
+      return ourFilms
+    }
+    catch(err) {
+      console.error("Capturei um erro: ", err)
+    }
+  }
+  
+  getFilms().then((films) => films.map((film) => container.innerHTML += createSection(film)))
+  
+  
