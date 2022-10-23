@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    color: azure;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    height: 95vh;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    align-items: center;
+    background-image: url(./ghibli-bg.jpg);
+    background-size: cover;
+}
+#demo{
+    display: grid;
+    flex-direction: column;
+    width: 180px;
+    height: 400px;
+}
+.banner img{
+    width: 100%;
+    align-self: center;
+    box-shadow: 1px 1px 10px white;
+}
+.title{
+    font-size: 2rem;
+}
+.description{
+    margin-top: 10px;
+}
+.director::before{
+font-style: normal;
+margin-right: 2px;
+}
+.date{
+    margin-top: 10px;
+}
