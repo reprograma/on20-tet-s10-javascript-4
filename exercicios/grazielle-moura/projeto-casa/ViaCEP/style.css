@@ -1,0 +1,10 @@
+body {
+    background-image: url('./Cidade.jpg');
+}
+
+  form {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
