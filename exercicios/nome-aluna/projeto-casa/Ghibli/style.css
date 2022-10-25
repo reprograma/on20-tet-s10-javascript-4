@@ -1,0 +1,27 @@
+#demo{
+    display: flex;
+}
+
+.titulo{
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.imagem{
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    border: double rebeccapurple;
+    border-top: double palevioletred;
+    border-bottom: double palevioletred;
+}
+
+.cards{
+    margin: 20px;
+    justify-content: space-around;
+}
+
+.imagem:hover{
+    margin: 25px;
+}
