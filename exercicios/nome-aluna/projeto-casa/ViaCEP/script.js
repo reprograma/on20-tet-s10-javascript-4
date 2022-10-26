@@ -1,24 +1,36 @@
-// TODO: Criar um evento para o click do botão  -> addEventListener
-// TODO: Funcão que faz a requisição e será chamada no evento
-// TODO: Função que de fato adicion a as informação da resposta nos inputs
+const mensagemErro = document.getElementById('mensagem-erro')
+function consultaEdereco() {
+    const cep = document.querySelector('#cep').value;
 
-document.getElementById('submit').addEventListener('click', (event) => {
-  event.preventDefault()
-  getAddress()
-})
+    if (cep.length !== 8) {
+        mensagemErro.innerHTML = ' CEP inválido';
+        return;
+    }else {
+        mensagemErro.innerHTML = ' ';
+    }
 
-async function getAddress() {
-  try {
-    const cep = document.getElementById('cep').value
-    const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`)
-    const address = await response.json()
-    document.getElementById('cep').value = address.cep
-    document.getElementById('logradouro').value = address.logradouro
-    document.getElementById('bairro').value = address.bairro
-    document.getElementById('localidade').value = address.localidade
-    document.getElementById('uf').value = address.uf
-  }
-  catch(err) {
-    console.error("Capturei um erro: ", err)
-  }
+
+    const url = `https://viacep.com.br/ws/${cep}/json/`
+
+    fetch(url).then(function (response) {
+        response.json().then(mosatrarEndereco)
+        })
+
+
+
+    }
+
+
+
+function mosatrarEndereco(dados) {
+    const resultado = document.querySelector('#resultado');
+    if (dados.erro) {
+        resultado.innerHTML = 'Não foi possivel localizar endereço '
+    } else {
+        resultado.innerHTML = `<p>Endereço: ${dados.logradouro}<p/>
+    <p>Complemento: ${dados.complemento}<p/>
+    <p>Bairro: ${dados.bairro}</p>
+    <p>Cidade: ${dados.localidade} - ${dados.uf}</p>`
+
+    }
 }

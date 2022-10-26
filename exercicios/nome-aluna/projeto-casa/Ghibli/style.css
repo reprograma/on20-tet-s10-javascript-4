@@ -1,40 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 10px;
-  font-family: "JetBrains Mono";
-  color: #353b48;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
-
 body {
-  height: 95vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-left: 2%;
-  align-items: center;
-  background-size: cover;
-}
+    background: rgb(2,0,36);
+    background: linear-gradient(240deg, rgba(2,0,36,1) 0%, rgba(108,9,121,1) 48%);
+    /* background-color: rgb(119, 85, 150); */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
-#demo {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
 }
-
-.film {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
+.logo {
+    width: 300px;
+    margin-top: 50px;  
 }
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 80px;  
+}
+.card {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(230, 172, 241);
+    border-radius: 10px;
+    min-height: 200px;
 
+}
 .image {
-  width: 100%;
-  align-self: center;
-  box-shadow: 1px 1px 10px #7f8fa6;
+    width: 250px;
+    height: 300px;    
 }
-
+.text {
+    width: 350px;
+    min-height: 250px;
+}
 .title {
-  font-size: 2rem;
+    font-size: 22px;
+    margin: 10px;    
+}
+.date {
+    font-weight: bold;
+    margin-left: 10px;
+}
+.description {
+    font-size: 14px;  
+    margin: 10px;
+
 }
