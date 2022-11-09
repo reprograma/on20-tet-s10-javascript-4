@@ -1,3 +1,28 @@
+<<<<<<< HEAD
+createSection = (film) => {
+    return `
+    <div class="film">
+    <img src=${film.image} class="image">
+    <h2 class="title">${film.title}</h2>
+    </div>
+    `
+    }
+    
+    const container = document.getElementById('demo')
+    
+    const getFilms = async () => {
+    try{
+    const response = await fetch('https://ghibliapi.herokuapp.com/films')
+    const films = await response.json()
+    return films 
+    }
+    catch (err){
+    console.error("Capturei um erro: ", err)
+    }
+    }
+    
+    getFilms().then((films) => films.map((film) => container.innerHTML += createSection(film)))
+=======
 // TODO: Criar função que retorna o HTML (OK)
 // TODO: Criar uma função asyncrona que realiza a requição (OK)
 // TODO: Criar uma função que gerencia toda a funcionalidade da aplicação (OK)
@@ -35,3 +60,4 @@ getFilms().then((films) => films.map((film) => container.innerHTML += createSect
 // }
 
 // main()
+>>>>>>> origin

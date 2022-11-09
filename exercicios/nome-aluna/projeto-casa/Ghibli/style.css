@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-size: 10px;
+font-family: "JetBrains Mono";
+color: #cdd3e0;
+font-family: 'Quicksand' ;
+=======
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +18,7 @@
   font-size: 10px;
   font-family: "JetBrains Mono";
   color: #353b48;
+>>>>>>> origin
 }
 
 body {
@@ -15,6 +29,21 @@ body {
   margin-left: 2%;
   align-items: center;
   background-size: cover;
+<<<<<<< HEAD
+  overflow-x: hidden;
+  background: url(https://i.pinimg.com/originals/c7/65/10/c765104b54fb5c45ea05dfc72bcf7513.gif) fixed;
+}
+
+
+
+#demo {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px 30px;
+  height: 50%;
+  width: 87%;
+  
+=======
 }
 
 #demo {
@@ -27,10 +56,21 @@ body {
   display: flex;
   flex-direction: column;
   width: 80%;
+>>>>>>> origin
 }
 
 .image {
   width: 100%;
+<<<<<<< HEAD
+  align-items: center;
+  box-shadow: 1px 1px 10px #7f8fa6;
+  border-radius: 5%;
+}
+
+.title {
+  font-size: 1.70rem;
+  padding-top: 2%;
+=======
   align-self: center;
   box-shadow: 1px 1px 10px #7f8fa6;
 }
@@ -38,3 +78,4 @@ body {
 .title {
   font-size: 2rem;
 }
+>>>>>>> origin
