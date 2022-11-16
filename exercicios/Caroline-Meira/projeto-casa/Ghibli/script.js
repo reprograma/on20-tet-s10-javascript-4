@@ -1,7 +1,3 @@
-// TODO: Criar função que retorna o HTML (OK)
-// TODO: Criar uma função asyncrona que realiza a requição (OK)
-// TODO: Criar uma função que gerencia toda a funcionalidade da aplicação (OK)
-
 const createSection = (film) => {
   return `
     <div class="film">
