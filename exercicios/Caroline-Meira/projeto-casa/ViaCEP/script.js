@@ -1,7 +1,3 @@
-// TODO: Criar um evento para o click do botão  -> addEventListener
-// TODO: Funcão que faz a requisição e será chamada no evento
-// TODO: Função que de fato adicion a as informação da resposta nos inputs
-
 document.getElementById('submit').addEventListener('click', (event) => {
   event.preventDefault()
   getAddress()
