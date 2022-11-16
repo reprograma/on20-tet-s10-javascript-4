@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=jetBrains+Monno:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: "JetBrains mono";
+    color:rgb(49, 99, 114);
+    background-color: rgba(129, 179, 219, 0.575);
+}
+
+body{
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 2%;
+    align-items: center;
+    background-size: cover;
+}
+
+#demo {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap:10px;
+}
+
+.film {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.image {
+    width: 100%;
+    align-self: center;
+    box-shadow: 1px 1px 10px #2e5ea1;
+}
+
+.title{
+    font-size: 2rem;
+}
+
+.titulo{
+    justify-content: center;
+    display: grid;
+    font-size: 5rem;
+    padding: 1.0rem;
+}
